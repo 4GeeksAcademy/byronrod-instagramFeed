@@ -1,0 +1,6 @@
+.profile-picture {
+    background-image: url(https://placebeard.it/640x360);
+    background-size: cover;
+    width: 3rem;
+    height: 3rem;
+}

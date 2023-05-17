@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css" class="rel">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg lg-body-tertiary">
+            <div class="container-fluid">
+                <a href="#" class="navbar-brand"><h4><i class="fa-brands fa-instagram fa-2xl"></i> Instagram</h4></a>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                
+                </div>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Create New Post
+                </button>
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1 class="modal-title fs-5" id="exampleModalLabel">Create New Post</h1>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <h5>Caption:</h5>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Add the caption of your post here"></textarea>
+                            <p class="pt-3 px-2"><i class="fa-solid fa-camera fa-lg"></i>&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-location-dot fa-lg"></i></p>                            
+                        </div>                        
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                          <button type="button" class="btn btn-success">Publish</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                    <div class="dropdown-center mx-3">
+                        <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="true">
+                            <i class="fa-solid fa-gear fa-xl"></i>
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-lg-end">
+                        <li><a class="dropdown-item" href="#">Profile</a></li>
+                        <li><a class="dropdown-item" href="#">Accesibility</a></li>
+                        <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Log out</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- termina navbar -->
+
+    <!-- Tabs -->
+    <div class="container my-5">
+    <ul class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
+        <li class="nav-item">
+          <a class="nav-link active" id="nav-tab-single" data-bs-toggle="tab" data-bs-target="#tab-single" type="button" role="tab" aria-controls="tab-grid" aria-selected="true"><i class="fa-regular fa-square"></i></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="nav-tab-grid" data-bs-toggle="tab" data-bs-target="#tab-grid" type="button" role="tab" aria-controls="tab-single" aria-selected="false"><i class="fa-solid fa-table-cells"></i></a>
+        </li>
+      </ul>
+    </div>
+
+<!-- single foto view -->
+<div class="tab-content" id="nav-tabContent">
+    <div class="tab-pane fade show active" id="tab-single" role="tabpanel" aria-labelledby="nav-tab-single">
+    <div class="container">
+        <div class="card my-4" style="width: 1100px;">
+            <div class="card-body">
+                <div class="card-header d-flex">
+                    <div class="d-flex flex-grow-1">
+                    <div class="profile-picture rounded-circle"></div>
+                    <h3 class="d-flex alight-self-center m-3">Random Generated Image 1</h3>
+                    </div>
+                    <div class="d-flex justify-content-end">
+                        5/17
+                    </div>
+                </div>
+            <img class="card-img p-2" src="http://placeimg.com/640/360/any"></img>
+            <div class="card-title">
+                <span><i class="fa-solid fa-heart m-3"></i><strong>204 likes</strong></span>
+            </div>
+            <div class="card-text">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi maiores minus sit nemo corrupti consectetur eveniet molestias eos recusandae assumenda. 
+            </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container">
+        <div class="card my-4"style="width: 1100px;">
+            <div class="card-body">
+                <div class="card-header d-flex">
+                    <div class="d-flex flex-grow-1">
+                    <div class="profile-picture rounded-circle"></div>
+                    <h3 class="d-flex alight-self-center m-3">Random Generated Image 2</h3>
+                    </div>
+                    <div class="d-flex justify-content-end">
+                        5/15
+                    </div>
+                </div>
+            <img class="card-img p-2" src="https://loremflickr.com/640/360"></img>
+            <div class="card-title">
+                <span><i class="fa-solid fa-heart m-3"></i><strong>450 likes</strong></span>
+            </div>
+            <div class="card-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, nostrum praesentium minima distinctio adipisci saepe deleniti, numquam impedit quos ipsam quia nesciunt tempore, natus sed similique architecto laboriosam officia odio? Optio qui libero et earum tenetur, veniam saepe neque blanditiis consequatur aperiam odit possimus consectetur culpa! Unde doloremque delectus facilis.
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="card my-4" style="width: 1100px;">
+            <div class="card-body">
+                <div class="card-header d-flex">
+                    <div class="d-flex flex-grow-1">
+                    <div class="profile-picture rounded-circle"></div>
+                    <h3 class="d-flex alight-self-center m-3">I love Kittens</h3>
+                    </div>
+                    <div class="d-flex justify-content-end">
+                        5/10
+                    </div>
+                </div>
+                    
+                </div>
+            <img class="card-img p-2" src="https://placekitten.com/640/360"></img>
+            <div class="card-title p-2">
+                <span><i class="fa-solid fa-heart m-3"></i><strong>790 likes</strong></span>
+            </div>
+            <div class="card-text p-2">
+                Kitten kitten kitten Kitten kitten kitten Kitten kitten kitten Kitten kitten kitten Kitten kitten kitten Kitten kitten kitten Kitten kitten kitten Kitten kitten kitten Kitten kitten kitten Kitten kitten kitten Kitten kitten kitten Kitten kitten kitten Kitten kitten kitten Kitten kitten kitten Kitten kitten kitten 
+            </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Termina single view -->
+
+<!-- GRID VIEW -->
+<div class="tab-pane fade" id="tab-grid" role="tabpanel" aria-labelledby="nav-tab-grid">
+    <div class="gallery">
+    <div class="container p-2">
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="img-thumbnail">
+                    <img src="http://placeimg.com/400/400/any" class="img-fluid">
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="img-thumbnail">
+                    <img src="https://loremflickr.com/400/400" class="img-fluid">
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="img-thumbnail">
+                    <img src="https://placekitten.com/400/400" class="img-fluid">
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="img-thumbnail">
+                    <img src="https://placebear.com/400/400" class="img-fluid">
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="img-thumbnail">
+                    <img src="https://picsum.photos/400/400" class="img-fluid">
+                </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="img-thumbnail">
+                <img src="https://baconmockup.com/400/400" class="img-fluid">
+            </div>
+    </div>
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/f05d368172.js" crossorigin="anonymous"></script>
+</body>
+</html>
